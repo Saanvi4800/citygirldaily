@@ -10,7 +10,7 @@ export default function Navbar() {
     }}>
       <Link href="/">home</Link>
       <Link href="/gallery">gallery</Link>
-      <Link href="/subway">subway</Link>
+      <Link href="/maps">maps</Link>
       <Link href="/itinerary">itinerary</Link>
     </nav>
   );

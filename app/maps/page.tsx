@@ -9,6 +9,8 @@ export default function MapsPage() {
     return <div style={{ color: "red" }}>Google Maps API key missing</div>;
   }
 
+  // Tester
+
   return (
     <APIProvider apiKey={apiKey}>
       <div style={{ height: "100vh", width: "100%" }}>

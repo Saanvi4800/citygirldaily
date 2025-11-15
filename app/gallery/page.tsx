@@ -1,8 +1,13 @@
-export default function Home() {
+import Navbar from "@/components/Navbar";
+
+export default function GalleryPage() {
   return (
-    <main style={{ padding: "40px", textAlign: "center" }}>
-      <h1>NYC Travel Guide</h1>
-      <p>Welcome to my website built with React + Next.js!</p>
+    <main>
+      <Navbar />
+      <div style={{ padding: "40px" }}>
+        <h1>Gallery 📸</h1>
+        <p>Rotating cute gallery will go here!</p>
+      </div>
     </main>
   );
 }

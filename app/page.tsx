@@ -1,13 +1,11 @@
 import TextType from './TextType';
-import Navbar from '../components/Navbar';
+import Navbar from './components/Navbar';
 
 export default function GalleryPage() {
   return (
     <div>
       <Navbar />
     <div style={{ padding: "40px" }}>
-      <h1>gallery</h1>
-
       <TextType 
         text={["hello~!"]}
       />

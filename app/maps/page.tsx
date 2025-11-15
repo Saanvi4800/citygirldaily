@@ -1,21 +1,22 @@
-import Link from 'next/link'            
-import Navbar from './components/Navbar';
+'use client';
 
-export default function GalleryPage() {
-  return (
-    <div>
-      <h1>Maps</h1>
-        <Navbar /> 
-    </div>
-  );
-}
+import { APIProvider, Map, MapCameraChangedEvent } from '@vis.gl/react-google-maps';
 
-let map: google.maps.Map;
-const center: google.maps.LatLngLiteral = {lat: 30, lng: -110};
+const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY; // ✔ works on client side
 
-function initMap(): void {
-  map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
-    center,
-    zoom: 8
-  });
-}
+const App = () => (
+  <APIProvider
+    apiKey={key || ""}
+    onLoad={() => console.log("Maps API has loaded.")}
+  >
+    <Map
+      defaultZoom={13}
+      defaultCenter={{ lat: -33.860664, lng: 151.208138 }}
+      onCameraChanged={(ev: MapCameraChangedEvent) =>
+        console.log("camera changed:", ev.detail.center, "zoom:", ev.detail.zoom)
+      }
+    />
+  </APIProvider>
+);
+
+export default App;

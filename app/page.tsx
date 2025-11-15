@@ -3,10 +3,9 @@ import TextType from './TextType';
 export default function GalleryPage() {
   return (
     <div style={{ padding: "40px" }}>
-      <h1>Gallery ✨</h1>
 
       <TextType 
-        text={["hello~!"]}
+        text={["~new york, concrete jungle where dreams are made of~"]}
       />
 
       <TextType 

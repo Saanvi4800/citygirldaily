@@ -6,8 +6,6 @@ export default function GalleryPage() {
     <div>
       <Navbar />
     <div style={{ padding: "40px" }}>
-      <h1>gallery</h1>
-
       <TextType 
         text={["hello~!"]}
       />

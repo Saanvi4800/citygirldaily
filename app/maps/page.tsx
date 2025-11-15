@@ -1,22 +1,22 @@
-import Link from 'next/link'            
-import Navbar from '../components/Navbar';
+'use client';
 
-export default function GalleryPage() {
-  return (
-    <div>
-      <h1>Maps</h1>
-        <Navbar /> 
-    </div>
-  );
-}
+import { APIProvider, Map, MapCameraChangedEvent } from '@vis.gl/react-google-maps';
 
-// This example adds a map with markers, using web components.
-async function initMap(): Promise<void> {
-    console.log('Maps JavaScript API loaded.');
-}
-declare global {
-    interface Window {
-      initMap: () => void;
-    }
-  }
-window.initMap = initMap;
+const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY; // ✔ works on client side
+
+const App = () => (
+  <APIProvider
+    apiKey={key || ""}
+    onLoad={() => console.log("Maps API has loaded.")}
+  >
+    <Map
+      defaultZoom={13}
+      defaultCenter={{ lat: -33.860664, lng: 151.208138 }}
+      onCameraChanged={(ev: MapCameraChangedEvent) =>
+        console.log("camera changed:", ev.detail.center, "zoom:", ev.detail.zoom)
+      }
+    />
+  </APIProvider>
+);
+
+export default App;

@@ -1,11 +1,15 @@
 import TextType from './TextType';
+import Navbar from '../components/Navbar';
 
 export default function GalleryPage() {
   return (
+    <div>
+      <Navbar />
     <div style={{ padding: "40px" }}>
+      <h1>gallery</h1>
 
       <TextType 
-        text={["~new york, concrete jungle where dreams are made of~"]}
+        text={["hello~!"]}
       />
 
       <TextType 
@@ -15,6 +19,7 @@ export default function GalleryPage() {
         showCursor={true}
         cursorCharacter="|"
       />
+    </div>
     </div>
   );
 }

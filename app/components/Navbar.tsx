@@ -8,10 +8,10 @@ export default function Navbar() {
       background: "#ffb6d9",
       borderBottom: "2px solidrgb(170, 39, 107)"
     }}>
-      <Link href="/">home</Link>
-      <Link href="/gallery">gallery</Link>
-      <Link href="/maps">maps</Link>
-      <Link href="/itinerary">itinerary</Link>
+      <Link href="/">home </Link>
+      <Link href="/gallery">gallery </Link>
+      <Link href="/maps">maps </Link>
+      <Link href="/itinerary">itinerary </Link>
     </nav>
   );
 }

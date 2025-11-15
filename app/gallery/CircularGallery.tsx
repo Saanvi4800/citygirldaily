@@ -78,7 +78,7 @@ class Title {
   font: string;
   mesh!: Mesh;
 
-  constructor({ gl, plane, renderer, text, textColor = '#545050', font = '30px sans-serif' }: TitleProps) {
+  constructor({ gl, plane, renderer, text, textColor = '#545050', font = '30px monospace' }: TitleProps) {
     autoBind(this);
     this.gl = gl;
     this.plane = plane;
@@ -478,8 +478,8 @@ class App {
   ) {
     const defaultItems = [
       {
-        image: `https://picsum.photos/seed/1/800/600?grayscale`,
-        text: 'Bridge'
+        image: `https://i.shgcdn.com/84c99225-d7e7-4aaf-a977-def796420496/-/format/auto/-/preview/3000x3000/-/quality/lighter/`,
+        text: 'hibiscus brew cafe'
       },
       {
         image: `https://picsum.photos/seed/2/800/600?grayscale`,

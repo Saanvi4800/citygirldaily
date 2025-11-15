@@ -8,24 +8,22 @@ export default function GalleryPage() {
   return (
     <main style={{ minHeight: "100vh" }}>
       <Navbar />
-      <div style={{ padding: "40px" }}>
+      <div style={{ backgroundColor: "white", textAlign: "center", fontFamily: "monospace", padding: "40px", fontSize: "40px", color: "#ff4fa3"}}>
         <TextType 
-          text={["city girl daily"]}
+          text={["✮⋆˙claire's gallery˙⋆✮"]}
           typingSpeed={75}
           pauseDuration={1500}
           showCursor={true}
           cursorCharacter="|"
         />
-        <div style={{ 
-          height: '600px', 
-          position: 'relative',
-          border: '3px solid #ccc' // Add border to see the container
+        <div style={{ height: '600px', position: 'relative', backgroundColor: '#ffffff'
         }}>
           <CircularGallery 
             bend={3} 
-            textColor="#ffffff" 
+            textColor="#ff4fa3" 
             borderRadius={0.05} 
             scrollEase={0.02}
+            font="30px monospace"
           />
         </div>
       </div>

@@ -1,10 +1,11 @@
-import Link from 'next/link'
+import Link from 'next/link'            
+import Navbar from '../components/Navbar';
 
 export default function GalleryPage() {
   return (
     <div>
       <h1>Maps</h1>
-        <Link href="/gallery">Dashboard</Link>
+        <Navbar /> 
     </div>
   );
 }

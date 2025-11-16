@@ -5,7 +5,7 @@ type activity = {
   thing: number;
   name: string;
   drama: string;
-}
+};
 
 export default function Itinerarypage() {
    const activities: activity[] = [
@@ -19,7 +19,7 @@ export default function Itinerarypage() {
  ];
  
  const [favorites, setFavorites] =  useState<number[]>([]);
- const [cross, setCross] = useState<number[]>([]);
+ 
  
  function toggleFavorite(thing: number) {
   if (favorites.includes(thing)) {
@@ -28,52 +28,45 @@ export default function Itinerarypage() {
     setFavorites([...favorites, thing]);
   }
 }
-function toggleStrikethrough(thing: number) {
-  if (favorites.includes(thing)) {
-    setCross(cross.filter(fav => fav !== thing));
-  } else {
-    setCross([...cross, thing]);
-  }
-}
 function showDrama(drama: string) {
   alert(drama);
   }
  
   return (
-    <div style = {{ 
-      padding: "30px",
-       color: "pink", 
-       fontFamily: "monospace",
-       backgroundColor: "white",
-       fontSize: "30px",
-       borderRadius: "25px",
+    <div 
+    style = {{ 
+    padding: "30px",
+    color: "pink", 
+    fontFamily: "monospace",
+   backgroundColor: "white",
+   fontSize: "30px",
+   borderRadius: "25px",
        }}
        >
       <h1> itinerary 🌸🗽🌇 </h1>
-      <p> XOXO city girls daily💋... pick your fav spot for a NYC perfect day, strike through the bad ones, and hear all about the characters spicy lore </p>
+      <p> XOXO city girls daily💋... pick your fav spot for a NYC perfect days and hear all about the characters lore </p>
      
-      
     {activities.map((first) => (
         <div key={first.thing} style={{ 
           marginBottom: 15, 
           border: "1px solid pink",
-          background: "#ffe6f3",
-          }}>
-          <strong>{first.name}</strong>
+          background: "white",
+          fontSize: "30px",
+          borderRadius: "25px",
+          }} >
+          <strong>{first.name}
+
+          </strong>
    
      <button onClick={() => showDrama(first.drama)} > 🔥🔥</button>
 
-      <button onClick={() => toggleFavorite(first.thing)} > </button>
-       {favorites.includes(first.thing) ? "👍": "💖"}
-        
-      <button onClick={() => toggleStrikethrough(first.thing)} > </button>
-        {favorites.includes(first.thing) ? "❌" : "✏️"}
-         
-         
-           </div>
-  ))}
+     <button onClick={() => toggleFavorite(first.thing)} >
+            {favorites.includes(first.thing) ? "👍" : "💖"}
+          </button>
+        </div>
+))}
   <h2> Favorites!!</h2>
-  {favorites.length === 0 && <p>No favorites yet!</p>}
+  {favorites.length === 0 && <p> No favorites yet!</p>}
 
 <ul>
   {favorites.map((thing) => {

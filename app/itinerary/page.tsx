@@ -47,7 +47,7 @@ function showDrama(drama: string) {
         <div key={first.thing} style={{ marginBottom: 15 }}>
           <strong>{first.name}</strong>
    
-     <button onClick={() => showDrama(first.drama)} > character lore🔥🔥</button>
+     <button onClick={() => showDrama(first.drama)} > 🔥🔥</button>
 
       <button onClick={() => toggleFavorite(first.thing)} > </button>
        {favorites.includes(first.thing) ? "💖": "👍"}
@@ -70,6 +70,6 @@ function showDrama(drama: string) {
   );
 }
 
-//hello!!
-
+//heyyy
+//hjkhkjbbh
 

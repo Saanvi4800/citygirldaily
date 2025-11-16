@@ -40,20 +40,35 @@ function showDrama(drama: string) {
   }
  
   return (
-    <div style = {{ padding: "30px", color: "pink"}}>
-      <h1>itinerary 🌸🗽🌇 </h1>
+    <div style = {{ 
+      padding: "30px",
+       color: "pink", 
+       fontFamily: "monospace",
+       backgroundColor: "white",
+       fontSize: "30px",
+       borderRadius: "25px",
+       }}
+       >
+      <h1> itinerary 🌸🗽🌇 </h1>
       <p> XOXO city girls daily💋... pick your fav spot for a NYC perfect day, strike through the bad ones, and hear all about the characters spicy lore </p>
+     
+      
     {activities.map((first) => (
-        <div key={first.thing} style={{ marginBottom: 15 }}>
+        <div key={first.thing} style={{ 
+          marginBottom: 15, 
+          border: "1px solid pink",
+          background: "#ffe6f3",
+          }}>
           <strong>{first.name}</strong>
    
      <button onClick={() => showDrama(first.drama)} > 🔥🔥</button>
 
       <button onClick={() => toggleFavorite(first.thing)} > </button>
-       {favorites.includes(first.thing) ? "💖": "👍"}
+       {favorites.includes(first.thing) ? "👍": "💖"}
         
       <button onClick={() => toggleStrikethrough(first.thing)} > </button>
         {favorites.includes(first.thing) ? "❌" : "✏️"}
+         
          
            </div>
   ))}
@@ -70,6 +85,5 @@ function showDrama(drama: string) {
   );
 }
 
-//heyyy
-//hjkhkjbbh
+
 

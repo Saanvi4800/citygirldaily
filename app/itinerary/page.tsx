@@ -77,7 +77,3 @@ function showDrama(drama: string) {
 </div>
   );
 }
-
-
-
-//Yo

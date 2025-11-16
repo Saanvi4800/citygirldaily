@@ -17,7 +17,7 @@ export default function GalleryPage() {
           cursorCharacter="|"
       />
       <p style={{ fontSize: "25px", color: "#ff4fa3", paddingBottom: "0px", margin: "20px 0" }}>
-      scroll through and click for more info! ╰(*°▽°*)╯
+      scroll up and down and click for more info! ╰(*°▽°*)╯
     </p>
       <div style={{ height: '600px', position: 'relative', backgroundColor: '#ffffff'
       }}>

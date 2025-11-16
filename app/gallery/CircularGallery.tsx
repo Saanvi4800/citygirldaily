@@ -478,51 +478,51 @@ class App {
   ) {
     const defaultItems = [
       {
-        image: `https://i.shgcdn.com/84c99225-d7e7-4aaf-a977-def796420496/-/format/auto/-/preview/3000x3000/-/quality/lighter/`,
+        image: '/images/hibiscus.jpg',
         text: 'hibiscus brew cafe'
       },
       {
-        image: `https://static01.nyt.com/images/2012/08/29/dining/29REST1_SPAN/29REST1-superJumbo.jpg`,
+        image: '/images/rosemarys.jpg',
         text: 'rosemary\'s restaurant'
       },
       {
-        image: `https://media.istockphoto.com/id/537118979/photo/central-park-bow-bridge-on-snowy-colorful-sunset.jpg?s=612x612&w=0&k=20&c=3NBNnwBCmftDHuyvFljqhPDHTna_KF9Tl-o38xsGQBg=`,
+        image: '/images/bowbridge.jpg',
         text: 'bow bridge'
       },
       {
-        image: `https://i0.wp.com/thisdarlingworld.com/wp-content/uploads/2016/09/107616752_2000913126707207_7816071770769579530_n.jpg?resize=1080%2C1344&ssl=1`,
+        image: '/images/greenwich village.jpg',
         text: 'greenwich village'
       },
       {
-        image: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Grand_Central_Terminal%2C_New_York_City_%285903663780%29.jpg/1024px-Grand_Central_Terminal%2C_New_York_City_%285903663780%29.jpg`,
+        image: '/images/grand terminal.jpg',
         text: 'grand terminal'
       },
       {
-        image: `https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/ba/86/b5/and-even-more-books.jpg?w=900&h=500&s=1`,
+        image: '/images/strand.jpg',
         text: 'the strand'
       },
       {
-        image: `https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/b7/f9/4c/the-cloisters.jpg?w=900&h=500&s=1`,
+        image: '/images/cloisters.jpg',
         text: 'met cloisters'
       },
       {
-        image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_gx01fnsNe6KkyvJLMa0W70fk1Ow3A7L6Kw&s`,
+        image: '/images/rose.jpg',
         text: 'planet rose'
       },
       {
-        image: `https://i.ytimg.com/vi/Qwq-e-khLKQ/maxresdefault.jpg`,
+        image: '/images/arstoria.jpg',
         text: 'arstoria park'
       },
       {
-        image: `https://images.squarespace-cdn.com/content/v1/5f2ecc8594a1d33040f8464a/1ce16220-b2b3-4b21-a387-87f285a1dc3c/Pell-Street-Chinatown-NYC-colorful-lanterns.jpg`,
+        image: '/images/chinatown.webp',
         text: 'chinatown'
       },
       {
-        image: `https://thechiclife.com/wp-content/uploads/2016/12/UnionSquareHolidayMarket-1289.jpg`,
+        image: '/images/union.jpg',
         text: 'union square'
       },
       {
-        image: `https://res.cloudinary.com/traveltripperweb/image/upload/c_fit,f_auto,h_1200,q_auto,w_1200/v1715007144/p3in7ffjqolwmrmf6iag.jpg`,
+        image: '/images/brooklyn.jpg',
         text: 'brooklyn botanical garden'
       }
     ];

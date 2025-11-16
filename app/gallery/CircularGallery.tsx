@@ -478,7 +478,7 @@ class App {
   ) {
     const defaultItems = [
       {
-        image: '/images/hibiscus.jpg',
+        image: '/images/hibiscus.avif',
         text: 'hibiscus brew cafe'
       },
       {
@@ -494,7 +494,7 @@ class App {
         text: 'greenwich village'
       },
       {
-        image: '/images/grand terminal.jpg',
+        image: '/images/grandterminal.jpg',
         text: 'grand terminal'
       },
       {
@@ -514,7 +514,7 @@ class App {
         text: 'arstoria park'
       },
       {
-        image: '/images/chinatown.webp',
+        image: '/images/chinatown.jpg',
         text: 'chinatown'
       },
       {

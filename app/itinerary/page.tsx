@@ -36,7 +36,7 @@ function showDrama(drama: string) {
     <div 
     style = {{ 
     padding: "30px",
-    color: "pink", 
+    color: "#ff4fa3", 
     fontFamily: "monospace",
    backgroundColor: "white",
    fontSize: "30px",
@@ -61,7 +61,7 @@ function showDrama(drama: string) {
      <button onClick={() => showDrama(first.drama)} > 🔥🔥</button>
 
      <button onClick={() => toggleFavorite(first.thing)} >
-            {favorites.includes(first.thing) ? "👍" : "💖"}
+            {favorites.includes(first.thing) ? "❌" : "💖"}
           </button>
         </div>
 ))}

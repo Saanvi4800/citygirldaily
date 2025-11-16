@@ -44,7 +44,7 @@ function showDrama(drama: string) {
        }}
        >
       <h1> itinerary 🌸🗽🌇 </h1>
-      <p> XOXO city girls daily💋... pick your fav spot for a NYC perfect days and hear all about the characters lore </p>
+      <p> XOXO city girls daily💋... pick your fav spot for a NYC perfect day and hear all about the characters lore </p>
      
     {activities.map((first) => (
         <div key={first.thing} style={{ 
@@ -80,3 +80,4 @@ function showDrama(drama: string) {
 
 
 
+//Yo

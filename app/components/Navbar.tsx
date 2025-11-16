@@ -6,7 +6,6 @@ export default function Navbar() {
       display: "flex",
       padding: "20px",
       background: "#ffb6d9",
-      borderBottom: "2px solidrgb(170, 39, 107)",
       fontFamily: "monospace",
       fontSize: "30px",
       justifyContent: "space-around"

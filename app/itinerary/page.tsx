@@ -19,7 +19,7 @@ export default function Itinerarypage() {
  ];
  
  const [favorites, setFavorites] =  useState<number[]>([]);
- 
+ const [cross, setCross] = useState<number[]>([]);
  
  function toggleFavorite(thing: number) {
   if (favorites.includes(thing)) {
@@ -28,16 +28,48 @@ export default function Itinerarypage() {
     setFavorites([...favorites, thing]);
   }
 }
+function toggleStrikethrough(thing: number) {
+  if (favorites.includes(thing)) {
+    setCross(cross.filter(fav => fav !== thing));
+  } else {
+    setCross([...cross, thing]);
+  }
+}
 function showDrama(drama: string) {
   alert(drama);
-  };
-  
-  //hi!!
+  }
  
   return (
-    <div>
+    <div style = {{ padding: "30px", color: "pink"}}>
       <h1>itinerary 🌸🗽🌇 </h1>
-      <p> XOXO city girls daily... please favorite the recommendations that would make your perfect day, remove the bad ones, and hear all about the characters spicy lore </p>
-    </div>
+      <p> XOXO city girls daily💋... pick your fav spot for a NYC perfect day, strike through the bad ones, and hear all about the characters spicy lore </p>
+    {activities.map((first) => (
+        <div key={first.thing} style={{ marginBottom: 15 }}>
+          <strong>{first.name}</strong>
+   
+     <button onClick={() => showDrama(first.drama)} > character lore🔥🔥</button>
+
+      <button onClick={() => toggleFavorite(first.thing)} > </button>
+       {favorites.includes(first.thing) ? "💖": "👍"}
+        
+      <button onClick={() => toggleStrikethrough(first.thing)} > </button>
+        {favorites.includes(first.thing) ? "❌" : "✏️"}
+         
+           </div>
+  ))}
+  <h2> Favorites!!</h2>
+  {favorites.length === 0 && <p>No favorites yet!</p>}
+
+<ul>
+  {favorites.map((thing) => {
+    const item = activities.find((x) => x.thing === thing);
+    return <li key={thing}>{item?.name}</li>;
+  })}
+</ul>
+</div>
   );
 }
+
+//hello!!
+
+

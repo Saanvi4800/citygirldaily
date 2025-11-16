@@ -12,6 +12,7 @@
     "@react-google-maps/api": "^2.20.7",
     "@vis.gl/react-google-maps": "^1.7.1",
     "dotenv": "^17.2.3",
+    "framer-motion": "^12.23.24",
     "gsap": "^3.13.0",
     "next": "^16.0.3",
     "ogl": "^1.0.11",

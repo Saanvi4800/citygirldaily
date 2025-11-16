@@ -1,11 +1,14 @@
 "use client";
 import { useState } from "react";
+import Navbar from "../components/Navbar";
 
 type activity = {
   thing: number;
   name: string;
   drama: string;
 };
+
+<Navbar />
 
 export default function Itinerarypage() {
    const activities: activity[] = [

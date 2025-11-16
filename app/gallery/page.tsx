@@ -15,17 +15,21 @@ export default function GalleryPage() {
           pauseDuration={1500}
           showCursor={true}
           cursorCharacter="|"
+      />
+      <p style={{ fontSize: "25px", color: "#ff4fa3", paddingBottom: "0px", margin: "20px 0" }}>
+      scroll through and click for more info! ╰(*°▽°*)╯
+    </p>
+      <div style={{ height: '600px', position: 'relative', backgroundColor: '#ffffff'
+      }}>
+        <CircularGallery 
+          bend={3} 
+          textColor="#ff4fa3" 
+          borderRadius={0.05} 
+          scrollEase={0.05}
+          font="30px monospace"
+
         />
-        <div style={{ height: '600px', position: 'relative', backgroundColor: '#ffffff'
-        }}>
-          <CircularGallery 
-            bend={3} 
-            textColor="#ff4fa3" 
-            borderRadius={0.05} 
-            scrollEase={0.02}
-            font="30px monospace"
-          />
-        </div>
+      </div>
       </div>
     </main>
   );

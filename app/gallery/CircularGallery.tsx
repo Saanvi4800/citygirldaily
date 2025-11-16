@@ -423,7 +423,7 @@ class App {
       borderRadius = 0,
       font = 'bold 30px Figtree',
       scrollSpeed = 2,
-      scrollEase = 0.05
+      scrollEase = 0.1
     }: AppConfig
   ) {
     document.documentElement.classList.remove('no-js');
@@ -482,48 +482,48 @@ class App {
         text: 'hibiscus brew cafe'
       },
       {
-        image: `https://picsum.photos/seed/2/800/600?grayscale`,
-        text: 'Desk Setup'
+        image: `https://static01.nyt.com/images/2012/08/29/dining/29REST1_SPAN/29REST1-superJumbo.jpg`,
+        text: 'rosemary\'s restaurant'
       },
       {
-        image: `https://picsum.photos/seed/3/800/600?grayscale`,
-        text: 'Waterfall'
+        image: `https://media.istockphoto.com/id/537118979/photo/central-park-bow-bridge-on-snowy-colorful-sunset.jpg?s=612x612&w=0&k=20&c=3NBNnwBCmftDHuyvFljqhPDHTna_KF9Tl-o38xsGQBg=`,
+        text: 'bow bridge'
       },
       {
-        image: `https://picsum.photos/seed/4/800/600?grayscale`,
-        text: 'Strawberries'
+        image: `https://i0.wp.com/thisdarlingworld.com/wp-content/uploads/2016/09/107616752_2000913126707207_7816071770769579530_n.jpg?resize=1080%2C1344&ssl=1`,
+        text: 'greenwich village'
       },
       {
-        image: `https://picsum.photos/seed/5/800/600?grayscale`,
-        text: 'Deep Diving'
+        image: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Grand_Central_Terminal%2C_New_York_City_%285903663780%29.jpg/1024px-Grand_Central_Terminal%2C_New_York_City_%285903663780%29.jpg`,
+        text: 'grand terminal'
       },
       {
-        image: `https://picsum.photos/seed/16/800/600?grayscale`,
-        text: 'Train Track'
+        image: `https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/ba/86/b5/and-even-more-books.jpg?w=900&h=500&s=1`,
+        text: 'the strand'
       },
       {
-        image: `https://picsum.photos/seed/17/800/600?grayscale`,
-        text: 'Santorini'
+        image: `https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/b7/f9/4c/the-cloisters.jpg?w=900&h=500&s=1`,
+        text: 'met cloisters'
       },
       {
-        image: `https://picsum.photos/seed/8/800/600?grayscale`,
-        text: 'Blurry Lights'
+        image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_gx01fnsNe6KkyvJLMa0W70fk1Ow3A7L6Kw&s`,
+        text: 'planet rose'
       },
       {
-        image: `https://picsum.photos/seed/9/800/600?grayscale`,
-        text: 'New York'
+        image: `https://i.ytimg.com/vi/Qwq-e-khLKQ/maxresdefault.jpg`,
+        text: 'arstoria park'
       },
       {
-        image: `https://picsum.photos/seed/10/800/600?grayscale`,
-        text: 'Good Boy'
+        image: `https://images.squarespace-cdn.com/content/v1/5f2ecc8594a1d33040f8464a/1ce16220-b2b3-4b21-a387-87f285a1dc3c/Pell-Street-Chinatown-NYC-colorful-lanterns.jpg`,
+        text: 'chinatown'
       },
       {
-        image: `https://picsum.photos/seed/21/800/600?grayscale`,
-        text: 'Coastline'
+        image: `https://thechiclife.com/wp-content/uploads/2016/12/UnionSquareHolidayMarket-1289.jpg`,
+        text: 'union square'
       },
       {
-        image: `https://picsum.photos/seed/12/800/600?grayscale`,
-        text: 'Palm Trees'
+        image: `https://res.cloudinary.com/traveltripperweb/image/upload/c_fit,f_auto,h_1200,q_auto,w_1200/v1715007144/p3in7ffjqolwmrmf6iag.jpg`,
+        text: 'brooklyn botanical garden'
       }
     ];
     const galleryItems = items && items.length ? items : defaultItems;

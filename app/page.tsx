@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Slide from "@mui/material/Slide";
 import Switch from "@mui/material/Switch";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -10,6 +10,12 @@ import Navbar from './components/Navbar';
 
 export default function GalleryPage() {
   const [showFriends, setShowFriends] = useState(false);
+
+  useEffect(() => { 
+        const timer = setTimeout(() => {
+          setShowFriends(true)},400);
+        } , []);
+      
 
   return (
     <main style={{ minHeight: "100vh" }}>
@@ -36,30 +42,25 @@ export default function GalleryPage() {
         <TextType
           text={["welcome to new york, its been waiting for you"]}
           typingSpeed={75}
-          pauseDuration={1000000}
+          pauseDuration={10000}
           showCursor={true}
-          cursorCharacter="|"
+          cursorCharacter=" "
         />
 
-      import { useEffect, useState } from "react";
 
-      useEffect(() => {
-        const timer = setTimeout(() => {
-          setShowFriends(true),400);
-      }, []);
+      
 
 
         <Slide direction="up" in={showFriends} mountOnEnter unmountOnExit>
           <div
             style={{
-              display: "flex",
               marginTop: "30px",
               justifyContent: "center",
             }}
           >
             <img
               src="/images/claire.png"
-              alt="girl1"
+              alt="claire"
               style={{
                 width: "220px",
                 borderRadius: "20px",
@@ -68,7 +69,7 @@ export default function GalleryPage() {
 
             <img
               src="/images/cerena.png"
-              alt="girl2"
+              alt="cerena"
               style={{
                 width: "220px",
                 borderRadius: "20px",
@@ -79,7 +80,7 @@ export default function GalleryPage() {
 
         <div
           style={{
-            height: "600px",
+            height: "400px",
             position: "relative",
             backgroundColor: "#ffffff",
           }}

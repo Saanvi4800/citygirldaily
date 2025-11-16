@@ -1,47 +1,42 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import Slide from "@mui/material/Slide";
-
 import TextType from './TextType';
 import Navbar from './components/Navbar';
 
 export default function GalleryPage() {
   const [showFriends, setShowFriends] = useState(false);
-
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowFriends(true);
     }, 1000);
-
     return () => clearTimeout(timer);
   }, []);
-
+  
   return (
     <main
       style={{
-        height: "100vh",          // ❗ full screen height only
-        overflow: "hidden",       // ❗ no scrolling
+        overflow: "hidden",
       }}
     >
       <Navbar />
-
       <div
         style={{
           backgroundColor: "white",
           textAlign: "center",
           fontFamily: "monospace",
           paddingTop: "20px",
+          paddingBottom: "20px",
           fontSize: "40px",
           color: "#ff4fa3",
-          height: "calc(100vh - 80px)", // adjust for navbar height
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
+          justifyContent: "flex-start",
         }}
       >
-        {/* keep text ABOVE slide */}
-        <div style={{ marginBottom: "20px" }}>
+        {/* TextType heading with top margin */}
+        <div style={{ marginTop: "40px", marginBottom: "-20px", marginLeft: 0, marginRight: 0 }}>
           <TextType
             text={["✮⋆˙xoxo city girl daily˙⋆✮"]}
             typingSpeed={75}
@@ -49,16 +44,8 @@ export default function GalleryPage() {
             showCursor={true}
             cursorCharacter="|"
           />
-
-          <TextType
-            text={["welcome to new york, its been waiting for you"]}
-            typingSpeed={75}
-            pauseDuration={10000}
-            showCursor={true}
-            cursorCharacter=" "
-          />
         </div>
-
+        
         {/* GIRLS LEFT + RIGHT, TEXT IN MIDDLE */}
         <Slide direction="up" in={showFriends} mountOnEnter unmountOnExit>
           <div
@@ -66,23 +53,19 @@ export default function GalleryPage() {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
-              padding: "0 80px",
+              padding: "0 40px",
               width: "100%",
               maxWidth: "1600px",
               margin: "0 auto",
             }}
           >
-            {/* LEFT GIRL */}
             <img
               src="/images/claire.png"
               alt="claire"
               style={{
-                width: "400px",
-                borderRadius: "20px",
+                width: "500px",
               }}
             />
-
-            {/* CENTER TEXT */}
             <div
               style={{
                 fontSize: "32px",
@@ -92,21 +75,17 @@ export default function GalleryPage() {
                 width: "40%",
               }}
             >
-              ✨ besties in the city ✨
+             welcome to new york, it's been waiting for you!
             </div>
-
-            {/* RIGHT GIRL */}
             <img
               src="/images/cerena.png"
               alt="cerena"
               style={{
-                width: "400px",
-                borderRadius: "20px",
+                width: "500px",
               }}
             />
           </div>
         </Slide>
-
       </div>
     </main>
   );

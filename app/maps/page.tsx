@@ -12,10 +12,9 @@ const locations = [
   { lat: 40.7794, lng: -73.9631, title: "The Met Museum" },
   { lat: 40.759, lng: -73.985, title: "Broadway Theaters" },
   { lat: 40.723, lng: -74.000, title: "SoHo Shopping District" },
-  { lat: 40.44, lng: -74.0022, title: "Chelsea Market" },
+  { lat: 40.744, lng: -74.0022, title: "Chelsea Market" },
 ];
 
-// Component to auto-fit map to all markers
 const FitBounds = ({ locations }: { locations: { lat: number, lng: number }[] }) => {
   const map = useMap();
 
@@ -24,7 +23,7 @@ const FitBounds = ({ locations }: { locations: { lat: number, lng: number }[] })
 
     const bounds = new google.maps.LatLngBounds();
     locations.forEach((loc) => bounds.extend(loc));
-    map.fitBounds(bounds); // <-- Automatically zooms & centers
+    map.fitBounds(bounds);
   }, [map, locations]);
 
   return null;

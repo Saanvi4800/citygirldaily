@@ -70,12 +70,14 @@ export default function GalleryPage() {
               style={{
                 fontSize: "32px",
                 color: "#ff4fa3",
-                fontWeight: "bold",
                 padding: "0 20px",
                 width: "40%",
               }}
             >
              welcome to new york, it's been waiting for you!
+            <br></br>
+            <br></br>
+            we're claire and celena! we're so excited to share our favorite spots in nyc... and our spiciest secrets!
             </div>
             <img
               src="/images/cerena.png"

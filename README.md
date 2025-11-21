@@ -1,7 +1,9 @@
 # City Girl Daily
 
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+
 ## Description
-This website assists those who would like to travel New York City, by providing many different functions. The gallery displays various landmarks that one could visit. The map lets users see how close and far their different places are in order to plan their visit effciently. The travel itinerary provides the user with a place where they can find out more about the backstory of Celina and Claire as well and allow the user to scroll through landmarks and favorite any they would like to visit
+This website assists those who would like to travel New York City, by providing many different functions. The gallery displays various landmarks that one could visit. The map lets users see how close and far their different places are in order to plan their visit effciently. The travel itinerary provides the user with a place where they can find out more about the backstory of Cerena and Claire as well and allow the user to scroll through landmarks and favorite any they would like to visit
 
 ## Technologies Used
 React Framework<br><br>

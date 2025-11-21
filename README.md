@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# City Girl Daily
 
-## Getting Started
+## Description
+This website assists those who would like to travel New York City, by providing many different functions. The gallery displays various landmarks that one could visit. The map lets users see how close and far their different places are in order to plan their visit effciently. The travel itinerary provides the user with a place where they can find out more about the backstory of Celina and Claire as well and allow the user to scroll through landmarks and favorite any they would like to visit
 
-First, run the development server:
+## Technologies Used
+React Framework<br><br>
+Typescript<br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## How to Run
+Unzip the file: Extract the contents of the downloaded ZIP file to a local folder on your computer.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open with a browser: Navigate to the project folder, locate the file, and double-click it. This will open the project in your default web browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Important Files included
+← README.md
+That's this file. This is the place to tell people more about what the website does and how we built it.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+← Apps
+This folder holds the all the code for the different pages
 
-## Learn More
+← Components
+This folder has all the important components of the website, like the navbar (Navbar.tsx) and text type feature (TextType.tsx)
 
-To learn more about Next.js, take a look at the following resources:
+← Layout/Page.tsx
+This file has all of the code for the main landing page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+← Page.tsx (inside maps, gallery, and itinerary)
+Holds the code for each of the different tabs on the website
